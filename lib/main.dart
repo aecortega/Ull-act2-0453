@@ -1,43 +1,51 @@
 import 'package:flutter/material.dart';
+import 'package:cisneros0453/pantalla16_0453.dart';
+import 'package:cisneros0453/pantalla15_0453.dart';
+import 'package:cisneros0453/pantalla14_0453.dart';
+import 'package:cisneros0453/pantalla13_0453.dart';
+import 'package:cisneros0453/pantalla12_0453.dart';
+import 'package:cisneros0453/pantalla11_0453.dart';
+import 'package:cisneros0453/pantalla10_0453.dart';
+import 'package:cisneros0453/pantalla9_0453.dart';
+import 'package:cisneros0453/pantalla8_0453.dart';
+import 'package:cisneros0453/pantalla7_0453.dart';
+import 'package:cisneros0453/pantalla6_0453.dart';
+import 'package:cisneros0453/pantalla5_0453.dart';
+import 'package:cisneros0453/pantalla4_0453.dart';
+import 'package:cisneros0453/pantalla3_0453.dart';
+import 'package:cisneros0453/pantalla2_0453.dart';
+import 'package:cisneros0453/pantalla1_0453.dart';
+import 'package:cisneros0453/pantallaini_0453.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(MiApp0453());
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  // This widget is the root of your application.
+class MiApp0453 extends StatelessWidget {
+  const MiApp0453({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // Application name
-      title: 'Flutter Hello World',
-      // Application theme data, you can set the colors for the application as
-      // you want
-      theme: ThemeData(
-        // useMaterial3: false,
-        primarySwatch: Colors.blue,
-      ),
-      // A widget which will be started on application startup
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  final String title;
-  const MyHomePage({super.key, required this.title});  
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        // The title text which will be shown on the action bar
-        title: Text(title),
-      ),
-      body: Center(
-        child: Text(
-          'Hello, World!',
-        ),
-      ),
-    );
-  }
-}
+      debugShowCheckedModeBanner: false,
+      initialRoute: "/",
+      routes: {
+        "/": (context) => const Pantallaini_0453(),
+        "/pantalla1_0453": (context) => const Pantalla10453(),
+        "/pantalla2_0453": (context) => const Pantalla20453(),
+        "/pantalla3_0453": (context) => const Pantalla30453(),
+        "/pantalla4_0453": (context) => const Pantalla40453(),
+        "/pantalla5_0453": (context) => const Pantalla50453(),
+        "/pantalla6_0453": (context) => const Pantalla60453(),
+        "/pantalla7_0453": (context) => const Pantalla70453(),
+        "/pantalla8_0453": (context) => const Pantalla80453(),
+        "/pantalla9_0453": (context) => const Pantalla90453(),
+        "/pantalla10_0453": (context) => const Pantalla100453(),
+        "/pantalla11_0453": (context) => const Pantalla110453(),
+        "/pantalla12_0453": (context) => const Pantalla120453(),
+        "/pantalla13_0453": (context) => const Pantalla130453(),
+        "/pantalla14_0453": (context) => const Pantalla140453(),
+        "/pantalla15_0453": (context) => const Pantalla150453(),
+        "/pantalla16_0453": (context) => const Pantalla160453(),
+      }, //fin ruta paginas
+    ); //fin ruta material
+  } //fin widget
+} //fin app
